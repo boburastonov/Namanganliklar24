@@ -656,6 +656,85 @@ img{
     margin-left: 10px;
 }     
 
+/* MODAL */
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    /* display: none; */
+}
+
+.modal-dialog{
+    position: relative;
+    width: 100%;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+}
+
+.modal-content{
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.modal-title{
+    width: 512px;
+    color: #000;
+    font-size: 26px;
+    line-height: 34px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.modal-btn{
+    color: #fff;
+    background-color: #F78B3B;
+    padding: 15px 40px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: auto;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.modal-btn:focus{
+    outline-color: #F78B3B;
+}
+
+.modal-btn:hover{
+    border-color: #F78B3B;
+    color: #F78B3B;
+    background-color: #fff;
+}
+
+.modal-btn:active{
+    opacity: .7;
+}
+
+.close-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.closeBtn:hover{
+    opacity: 0.8;
+}
+
+.closeBtn:active{
+    opacity: 0.6;
+}
 
 /* RETINA BG */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
